@@ -1,11 +1,11 @@
 /* Body */
 
 * {
-    font-family: 'Kanit', sans-serif;
+    font-family: 'Work Sans', sans-serif;
 }
 
 body {
-    background-color: #000;
+    background-color: #222;
 }
 
 /* Nav Bar */
@@ -21,7 +21,7 @@ a {
 }
 
 a:hover {
-    color: #00eaff;
+    color: #AA0000;
 }
 
 header {
@@ -66,7 +66,7 @@ header {
 }
 
 .highlight {
-    background-color: #0ef;
+    background-color: rgb(160, 0, 0);
     color: #fff;
     padding: 0.5rem 1rem;
     border: none;
