@@ -11,13 +11,4 @@ toggleBtn.onclick = function () {
   toggleBtnIcon.classList.toggle('fa-xmark', isOpen);
 };
 
-const navLinks = document.querySelectorAll('.nav ul li a, .dropdown-menu ul li a');
-
-navLinks.forEach(link => {
-  link.addEventListener('click', (e) => {
-    e.preventDefault(); // Prevent default navigation
-    alert('Under Construction'); // Show message
-  });
-});
-
 // Nav Bar Ends
