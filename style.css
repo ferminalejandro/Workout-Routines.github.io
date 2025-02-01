@@ -134,7 +134,22 @@ header {
   background-color: transparent;
 }
 
-/* Nav Bar Ends */
+/* Banner Styling */
+.banner {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: 600px;
+    background-color: black;
+}
+
+.banner-image {
+    width: auto;
+    height: 100%;
+    object-fit: contain;
+}
 
 /* Responsive */
 
