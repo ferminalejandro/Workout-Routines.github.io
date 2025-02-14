@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workout Feedback Survey</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-color: #222;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 20px;
+            text-align: center;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #333;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #fff;
+            font-size: 24px;
+        }
+        label {
+            font-weight: bold;
+            margin-top: 10px;
+            color: #fff;
+        }
+        select, input, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background: #444;
+            color: #fff;
+        }
+        .radio-group {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            width: 100%;
+        }
+        .radio-group input {
+            margin-right: 5px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #00bfff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+        button:hover {
+            background-color: #009acd;
+        }
+        .navbar a {
+            color: #fff !important;
+            transition: color 0.3s;
+        }
+        .navbar a:hover {
+            color: #00bfff !important;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html">Workout Routines</a>
+            </div>
+            <div class="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="beginner.html">Beginner</a></li>
+                    <li><a href="intermediate.html">Intermediate</a></li>
+                    <li><a href="advanced.html">Advanced</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="survey.html" class="active">Survey</a></li>
+                </ul>
+            </div>
+            <div class="dropdown-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="beginner.html">Beginner</a></li>
+                    <li><a href="intermediate.html">Intermediate</a></li>
+                    <li><a href="advanced.html">Advanced</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="faq.html">FAQ</a></li>   
+                    <li><a href="survey.html">Survey</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Feedback Survey</h1>
+        <form id="survey-form">
+            <label for="source">How did you hear about this website?</label>
+            <div class="radio-group">
+                <input type="radio" name="source" value="Social Media"> Social Media
+                <input type="radio" name="source" value="Advertising"> Advertising
+                <input type="radio" name="source" value="Search Engine"> Search Engine
+                <input type="radio" name="source" value="Friend"> Friend
+                <input type="radio" name="source" value="Other"> Other
+            </div>
+            
+            <label for="browser">What browser did you use to access this website?</label>
+            <div class="radio-group">
+                <input type="radio" name="browser" value="Google Chrome"> Google Chrome
+                <input type="radio" name="browser" value="Firefox"> Firefox
+                <input type="radio" name="browser" value="IE"> IE
+                <input type="radio" name="browser" value="Safari"> Safari
+                <input type="radio" name="browser" value="Opera"> Opera
+            </div>
+            
+            <label for="device">Which device did you use to access this website?</label>
+            <div class="radio-group">
+                <input type="radio" name="device" value="Desktop/Laptop"> Desktop/Laptop
+                <input type="radio" name="device" value="Mobile devices"> Mobile devices
+            </div>
+            
+            <label for="satisfaction">Are you satisfied with the workout routines on this website?</label>
+            <div class="radio-group">
+                <input type="radio" name="satisfaction" value="Very Satisfied"> Very Satisfied
+                <input type="radio" name="satisfaction" value="Satisfied"> Satisfied
+                <input type="radio" name="satisfaction" value="Neutral"> Neutral
+                <input type="radio" name="satisfaction" value="Unsatisfied"> Unsatisfied
+                <input type="radio" name="satisfaction" value="Very Unsatisfied"> Very Unsatisfied
+            </div>
+
+            <label for="likely">How likely are you to recommend this website to someone?</label>
+            <div class="radio-group">
+                <input type="radio" name="likely" value="Very Likely"> Very Likely
+                <input type="radio" name="likely" value="Likely"> Likely
+                <input type="radio" name="likely" value="Neutral"> Neutral
+                <input type="radio" name="likely" value="Unlikely"> Unlikely
+                <input type="radio" name="likely" value="Very Unlikely"> Very Unlikely
+            </div>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <script>
+        document.getElementById('survey-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Thank you for your feedback!');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
